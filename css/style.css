@@ -12,31 +12,46 @@
   --back-ground-btn: #f5f4fa;
 }
 
-html {
-  box-sizing: border-box;
-}
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
   margin: 0;
   font-size: 14px;
+  margin: 0;
 }
 .hat {
   background-color: var(--white-color);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  outline: 2px solid #2196f3;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-hat {
+  display: flex;
+  justify-content: space-between;
 }
 .headers-none {
   display: none;
 }
 .list {
   list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }
 .link {
   text-decoration: none;
+}
+.navigation {
+  display: flex;
+}
+.nav-list {
 }
 .navigation-link {
   color: var(--headers-text-color);
@@ -44,6 +59,7 @@ body {
 
   line-height: 1.1;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
 .logo-link {
   font-family: Raleway;
@@ -53,6 +69,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--web-logo-color);
   text-decoration: none;
+  display: inherit;
 }
 .link:hover,
 .link:focus {
@@ -76,27 +93,32 @@ body {
 }
 .hero {
   background-color: var(--hero-footer-color);
+  text-align: center;
+  margin-bottom: 94px;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .main-button {
   background-color: var(--button-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-
-  display: flex;
+  border-radius: 4px;
+  display: inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-
+  padding: 10px 32px;
   color: var(--white-color);
   cursor: pointer;
 }
@@ -105,12 +127,16 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--headers-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .description {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .second-header {
   font-size: 36px;
@@ -118,6 +144,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--headers-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .team-section {
   background-color: var(--last-section-color);
@@ -128,6 +156,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--headers-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team {
@@ -137,6 +167,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--headers-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .team-list {
   width: 270px;
@@ -151,6 +183,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .all-skills {
   display: flex;
