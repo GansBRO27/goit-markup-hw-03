@@ -4,7 +4,6 @@
   --studio-logo-color: #000000;
   --fover-focus-color: #2196f3;
   --headers-text-color: #212121;
-
   --hero-footer-color: #2f303a;
   --last-section-color: #f5f4fa;
   --button-color: #2196f3;
@@ -22,7 +21,7 @@ body {
 img {
   display: block;
 }
-/* утилитарные классы */
+
 .headers-none {
   display: none;
 }
@@ -55,6 +54,8 @@ img {
 /* ----------------------------------- */
 .hat {
   border-bottom: 1px solid #ececec;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .container-hat {
@@ -65,7 +66,7 @@ img {
 .had-lists .link {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  text-align: center;
 }
 .had-lists:not(:last-child) {
   margin-right: 50px;
@@ -82,10 +83,9 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-.logo-link {
+.navigation .logo-link {
   margin-right: 94px;
-  padding-top: 24px;
-
+  text-align: center;
   display: block;
   font-family: Raleway;
   font-weight: 700;
@@ -150,11 +150,16 @@ img {
   border: 0px;
 }
 .skill-list {
+  display: flex;
+}
+.skill-items {
+  max-width: 270px;
   flex-basis: 270px;
 }
-.slill-items {
-  margin-right: auto;
+.skill-items:not(:last-child) {
+  margin-right: 30px;
 }
+
 .titles {
   margin-top: 0;
   margin-bottom: 10px;
@@ -167,6 +172,7 @@ img {
 .description {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -197,13 +203,14 @@ img {
   color: var(--headers-text-color);
 }
 .team {
-  margin-bottom: 4px;
-
+  margin-bottom: 10px;
+  margin-top: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--headers-text-color);
 }
 .team-list {
   width: 270px;
@@ -211,11 +218,12 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 .profession {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -262,6 +270,18 @@ img {
 .footer-link:focus {
   color: var(--fover-focus-color);
 }
+.logo-footer-link {
+  margin-bottom: 20px;
+
+  display: block;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: var(--web-logo-color);
+  text-decoration: none;
+}
 .footer-logo {
   color: var(--white-color);
 }
@@ -272,19 +292,9 @@ img {
 /* нужно сделать подсветку текущей страницы добавив клас каррент ,
 /
 /*стили для портфолио  */
-.product {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--headers-text-color);
-}
-.product-description {
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
+
 .btn {
+  padding: 6px 22px;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -296,20 +306,61 @@ img {
   background: var(--back-ground-btn);
   cursor: pointer;
   display: block;
+  border: 0;
+}
+.img-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects {
+  padding-left: 24px;
+
+  padding-bottom: 20px;
+}
+.product {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--headers-text-color);
+
+  margin-bottom: 4px;
+}
+
+.product-description {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.img-list-items {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+.img-list-items:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.img-list-items:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-img {
+  margin-bottom: 20px;
 }
 .btn-list {
   align-items: center;
   justify-content: center;
-  padding-bottom: 16px;
+
+  margin-bottom: 50px;
 }
 .btn-list > .btn-items:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .btn:hover,
 .btn:focus {
   background-color: var(--fover-focus-color);
   color: var(--white-color);
-}
-.img-list {
 }
