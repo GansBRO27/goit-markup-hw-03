@@ -64,9 +64,6 @@ img {
 }
 
 .had-lists .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-align: center;
 }
 .had-lists:not(:last-child) {
   margin-right: 50px;
@@ -154,7 +151,6 @@ img {
 }
 .skill-items {
   max-width: 270px;
-  flex-basis: 270px;
 }
 .skill-items:not(:last-child) {
   margin-right: 30px;
