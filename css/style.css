@@ -100,6 +100,9 @@ img {
 .navigation-link:active {
   color: var(--fover-focus-color);
 }
+.current {
+  color: var(--fover-focus-color);
+}
 /* logo styles */
 
 .studio-logo {
@@ -303,17 +306,16 @@ img {
 .img-list {
   display: flex;
   margin-left: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
   flex-wrap: wrap;
 }
 
-.img-list-items + .img-list-items {
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
 .img-list-items {
+  margin-top: 30px;
+  margin-left: 30px;
   max-width: 370px;
 }
+
 .projects {
   padding-left: 24px;
   padding-right: 24px;
@@ -357,9 +359,7 @@ img {
   background-color: var(--fover-focus-color);
   color: var(--white-color);
 }
-.footer-container {
-  max-width: 231px;
-}
+
 /*  
 .masters-item {
   flex-basis: calc(100% / 3 - 30px);
